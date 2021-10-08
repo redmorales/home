@@ -1,0 +1,131 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text{
+	background-color: #F4976C;
+	color: #922C40;
+	font-family: 'Grey Qo', cursive;
+	font-size: 70px;
+	text-align: center;
+	font-weight: 800;
+}
+
+.banner1{
+	height: 150px;
+	/*width: auto;*/
+	background-image: url(../images/red-2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border:2px solid black;
+	padding: 100px;
+}
+
+.text{
+	background-color: rgba(255,255,255,0.5);
+	color: #922C40;
+	font-family: 'Grey Qo', cursive;
+	font-size: 70px;
+	text-align: center;
+	font-weight: 800;
+}
+
+main{
+	flex: 70%;
+	padding: 10px;
+	height: auto;
+}
+
+aside{
+	flex: 30%;
+	background-color:#F4976C;
+	padding: 10px;
+	text-align: center;
+}
+
+.imagePlaceHolder1{
+	background-color: #F4976C;
+	width: 100%;
+	height: 200px;
+	padding: 20px;
+}
+
+.imagePlaceHolder2{
+	background-color: #F4976C;
+	width: 100%;
+	height: 300px;
+	padding: 20px;
+} 
+
+img{
+	max-width: 100%;
+	height: 100%;
+	margin: 10px;
+	text-align: center;
+}
+
+footer{
+	background-color: #ddd;
+	text-align: center;
+	padding: 20px;
+}
+
+@font-face{
+	font-family: myfont;
+	src:  url(GreyQo-Regular.ttf);
+}
+
+h2{
+	font-family: 'Grey Qo', cursive; 
+	font-size: 30px;
+	font: white;
+	background-color: #922C40;
+}
+
+h5{
+	font-family: 'Grey Qo', cursive; 
+	font-size: 25px;
+	font: black;
+	background-color: #922C40;
+}
+
+
+@media screen and (max-width: 768px){
+	.navbar{
+		display: flex;
+		background-color: gray;
+		flex-direction: column;
+		}
+
+	.container{
+		flex-direction: column ;
+		}
+
+	.imagePlaceHolder1{
+		background-color: #F4976C;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+	}
+	.imagePlaceHolder2{
+		background-color: #F4976C;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+	}
+	.text{
+		background-color: rgba(255,255,255,0.5);
+		color: #922C40;
+		font-family: 'Grey Qo', cursive;
+		font-size: 40px;
+		text-align: center;
+		font-weight: 800;
+	}
+}
